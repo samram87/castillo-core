@@ -1,0 +1,17 @@
+@bgColor:white;
+@fgColor:black;
+@bgImage:'white_tiles';
+@bgImageRoute : '../img/pattern';
+
+body.boxed {
+    background: url("@{bgImageRoute}/@{bgImage}.png") repeat;
+}
+
+#top > .navbar {
+  border-top: 3px solid @bgColor;
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    background-color: @bgColor;
+    color: @fgColor;
+  }
+}
